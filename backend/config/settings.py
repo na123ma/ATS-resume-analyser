@@ -42,3 +42,6 @@ MONGO_DB = os.getenv('MONGO_DB', 'skillentra')
 SESSION_DAYS = 7
 EXAM_SECONDS = 600
 MAX_EXAM_EVENTS = 3
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+]
