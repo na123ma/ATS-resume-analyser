@@ -8,4 +8,7 @@ def home(request):
         "framework": "Django",
         "hosting": "Render"
     })
-urlpatterns = [path('api/', include('api.urls'))]
+urlpatterns = [
+    path("", home, name="home"),
+    path('api/', include('api.urls'))
+]
