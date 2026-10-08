@@ -8,7 +8,7 @@ DEBUG = os.getenv('DEBUG', 'true').lower() == 'true'
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'development-only-change-before-deployment')
 if not DEBUG and (len(SECRET_KEY) < 40 or SECRET_KEY.startswith('development-')):
     raise RuntimeError('Set a random DJANGO_SECRET_KEY of at least 40 characters.')
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1,backend,testserver').split(',')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1,backend,testserver,https://ats-resume-analyser-il7c.onrender.com').split(',')
 INSTALLED_APPS = ['api']
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
