@@ -33,6 +33,7 @@ SESSION_COOKIE_SECURE = os.getenv('COOKIE_SECURE', 'false').lower() == 'true'
 CSRF_COOKIE_SECURE = SESSION_COOKIE_SECURE
 CSRF_TRUSTED_ORIGINS = [s for s in os.getenv('CSRF_TRUSTED_ORIGINS', 'http://localhost:5173,http://localhost:8080',https://ats-resume-analyser-1.onrender.com).split(',') if s]
 SECURE_CONTENT_TYPE_NOSNIFF = True
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 X_FRAME_OPTIONS = 'DENY'
 SECURE_HSTS_SECONDS = 31536000 if SESSION_COOKIE_SECURE else 0
 PASSWORD_HASHERS = ['django.contrib.auth.hashers.PBKDF2PasswordHasher']
