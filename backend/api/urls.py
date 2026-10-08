@@ -14,5 +14,5 @@ urlpatterns = [
     path('interviews', views.interview_start), path('interviews/<str:resource_id>', views.interview_detail), path('interviews/<str:resource_id>/answers', views.interview_answer),
     path('coding', views.coding_start), path('coding/<str:resource_id>', views.coding_detail), path('coding/<str:resource_id>/submissions', views.coding_submit),
     path('submissions/<str:resource_id>', views.submission_detail),
-    path("analyze/", analyze_resume),
+    
 ]
