@@ -1,0 +1,8 @@
+Django>=5.2,<5.3
+pymongo>=4.10,<5
+pydantic>=2.10,<3
+httpx>=0.28,<0.29
+pypdf>=6,<7
+reportlab>=4.4,<5
+python-dotenv>=1,<2
+gunicorn>=23,<24
